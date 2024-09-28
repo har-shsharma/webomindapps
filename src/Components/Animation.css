@@ -1,0 +1,199 @@
+.AnimationTextHeading {
+    width: 788px;
+    height: 120px;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: right;
+    position: absolute;
+    left: 520px;
+    top: 50px;
+}
+
+.AnimationHighlightRed {
+    color: #EE1B30;
+}
+
+.animationItem1 {
+    background-image: url('/public/images/card1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 60px;
+}
+
+.animationItem2 {
+    background-image: url('/public/images/card2.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 95px;
+}
+
+.animationItem3 {
+    background-image: url('/public/images/card3.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 130px;
+}
+
+.animationItem4 {
+    background-image: url('/public/images/card4.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 165px;
+}
+
+.animationItem5 {
+    background-image: url('/public/images/card6.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    top: 200px;
+}
+
+.animationItem6 {
+    background-image: url('/public/images/card5.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 235px;
+}
+
+.animationItem7 {
+    background-image: url('/public/images/card7.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 270px;
+}
+
+.animationItem8 {
+    background-image: url('/public/images/card8.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 305px;
+}
+
+.animationItem9 {
+    background-image: url('/public/images/card9.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 340px;
+}
+
+.animationItem10 {
+    background-image: url('/public/images/card10.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+    width: 336.64px;
+    height: 527.26px;
+    border-radius: 29.38px;
+    transform: skewY(-10deg);
+    position: absolute;
+    top: 375px;
+}
+
+.animationIcon1 {
+    background-image: url('/public/images/Mask\ group.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 196.89px;
+    height: 179.11px;
+    position: absolute;
+    top: 1017.88px;
+    left: 120px;
+    border-radius: 15.82px 0px 0px 0px;
+
+}
+
+.animationIcon2 {
+    background-image: url('/public/images/Mask\ group.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 196.89px;
+    height: 179.11px;
+    position: absolute;
+    top: 1400.88px;
+    left: 450px;
+    border-radius: 15.82px 0px 0px 0px;
+
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%); 
+    }
+}
+
+.animationTextScrollEffect {
+    width: 523.28px;
+    height: 310.78px;
+    position: fixed;
+    top: 300px;
+    left: 817.81px;
+    overflow: hidden; 
+}
+
+.loremText {
+    position: absolute;
+    top: 0px;
+    font-size: 44px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: right;
+    animation: scroll 10s linear infinite; 
+}
+
+

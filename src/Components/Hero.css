@@ -1,0 +1,60 @@
+.heroContainer {
+    display: flex;
+    position: absolute;
+    top: 104px;
+    width:100vw;
+    justify-content: space-around;
+}
+
+.heroImage {
+    background-image: url('/public/images/Group\ 1171275606.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 727.95px;
+    height: 513.61px;
+    position: relative;
+    top:40px;
+    z-index: -1;
+}
+
+.heroTextContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top:100px;
+    left:50px;
+}
+
+.heroTextHeading {
+    width: 523.28px;
+    height: 180px;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+    text-align: left;
+}
+
+.highlightRed {
+    display: block;
+    color: #EE1B30;
+}
+
+.heroTextSub {
+    width: 412.81px;
+    height: 34px;
+font-size: 14px;
+font-weight: 400;
+line-height: 16.8px;
+text-align: left;
+}
+
+.heroCTAButton{
+    width: 161.24px;
+height: 39.78px;
+background-color:#EE1B30;
+color:#fff;
+border: none;
+border-radius: 36.93px;
+margin-top: 35px;
+}
+
