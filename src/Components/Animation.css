@@ -168,14 +168,14 @@
 
 }
 
-@keyframes scroll {
+/* @keyframes scroll {
     0% {
         transform: translateY(0);
     }
     100% {
         transform: translateY(-100%); 
     }
-}
+} */
 
 .animationTextScrollEffect {
     width: 523.28px;
@@ -193,7 +193,8 @@
     font-weight: 600;
     line-height: 60px;
     text-align: right;
-    animation: scroll 10s linear infinite; 
+    /* animation: scroll 10s linear infinite;  */
+    /* margin-top: 0px; */
 }
 
 

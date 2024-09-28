@@ -8,6 +8,8 @@ const Animation = () => {
   const [leftValues, setLeftValues] = useState([0, 140, 280, 420, 560, 700, 840, 980, 1120, 1260]);
   const [iconOpacity, setIconOpacity] = useState(0);
   const [icon1Top, setIcon1Top] = useState(0); 
+  const [loremMarginTop, setLoremMarginTop] = useState(0); // New state for margin-top
+
   const STAY_SCROLL_START = 781;
   const STAY_SCROLL_END = 1500;
   const STYLE_SCROLL_END = 2200;
@@ -17,6 +19,7 @@ const Animation = () => {
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
     setInitialScrollY(currentScrollY);
+
     if (currentScrollY > STAY_SCROLL_START && currentScrollY < STAY_SCROLL_END) {
       if (scrollY === 0) {
         setScrollY(currentScrollY);
@@ -43,15 +46,22 @@ const Animation = () => {
       const skewReduction = -10 + (currentScrollY - STAY_SCROLL_END) * 0.03;
       setMiddleItemStyle({ top: topIncrease, skewY: Math.min(skewReduction, 0) });
     }
+
+    // Adjust margin-top of loremText based on scroll position
     if (currentScrollY > 2200) {
       const newOpacity = Math.min((currentScrollY - 2200) / 50, 1);
       setIconOpacity(newOpacity);
       if(currentScrollY < STYLE_SCROLL_TOPEND){
           setIcon1Top((currentScrollY - 2200+1000)*1.2); 
       }
+
+      // Start decreasing margin-top after scrollY > 2200
+      const newLoremMarginTop = Math.min((currentScrollY - 2200) * 0.5, 200); // Limit margin-top change
+      setLoremMarginTop(newLoremMarginTop);
     } else {
       setIconOpacity(0); 
       setIcon1Top(0); 
+      setLoremMarginTop(0); // Reset margin-top when scroll is below 2200
     }
   };
 
@@ -104,8 +114,13 @@ const Animation = () => {
       </div>
       
     </div>
-    <div className="animationTextScrollEffect" style={{ opacity: iconOpacity ,position: initialScrollY > STYLE_SCROLL_TOPEND ? 'absolute' : 'fixed',top:initialScrollY>STYLE_SCROLL_TOPEND?'3100px':'300px'}}><p className="loremText">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat deleniti esse quae pariatur temporibus id ipsum dignissimos? Ullam, neque mollitia molestias, a amet expedita minus voluptatibus quia quaerat nam nesciunt!
-        Esse quasi temporibus eveniet nobis, dicta mollitia nulla quaerat dolores aperiam vero velit blanditiis nemo veniam animi. Magni vero ipsam possimus in aut accusantium illo quisquam dolore consequatur cumque! Nam.</p></div></>
+    <div className="animationTextScrollEffect" style={{ opacity: iconOpacity ,position: initialScrollY > STYLE_SCROLL_TOPEND ? 'absolute' : 'fixed',top:initialScrollY>STYLE_SCROLL_TOPEND?'3100px':'300px'}}>
+      <p className="loremText" style={{ marginTop: `${-loremMarginTop}px` }}>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat deleniti esse quae pariatur temporibus id ipsum dignissimos? Ullam, neque mollitia molestias, a amet expedita minus voluptatibus quia quaerat nam nesciunt!
+        Esse quasi temporibus eveniet nobis, dicta mollitia nulla quaerat dolores aperiam vero velit blanditiis nemo veniam animi. Magni vero ipsam possimus in aut accusantium illo quisquam dolore consequatur cumque! Nam.
+      </p>
+    </div>
+    </>
   );
 };
 
