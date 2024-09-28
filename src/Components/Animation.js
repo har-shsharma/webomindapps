@@ -54,7 +54,7 @@ const Animation = () => {
         setIcon1Top((currentScrollY - 2200 + 1000) * 1.2);
       }
 
-      const newLoremMarginTop = Math.min((currentScrollY - 2200) * 0.5, 300); 
+      const newLoremMarginTop = Math.min((currentScrollY - 2200) * 0.68, 400); 
       setLoremMarginTop(newLoremMarginTop);
     } else {
       setIconOpacity(0);

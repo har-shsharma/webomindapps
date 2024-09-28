@@ -101,17 +101,18 @@
 
 .footerContactLinksContainer {
     display: flex;
-    gap: 100px;
+    justify-content: space-around;
     width: 90%;
 }
 
 .footerContactsOuterContainer {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    overflow: hidden;
+    
 }
 
 .linkItems {
-    display: inline-block;
     list-style: none;
     font-size: 15px;
     font-weight: 400;
