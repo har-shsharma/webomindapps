@@ -1,4 +1,4 @@
-import React, { useState ,useRef} from 'react';
+import React, { useState, useRef } from 'react';
 import './Navbar.css';
 
 function Navbar() {
@@ -8,7 +8,7 @@ function Navbar() {
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
-  const closeMenu=()=>{
+  const closeMenu = () => {
     buttonRef.current.click();
   }
 
@@ -22,15 +22,15 @@ function Navbar() {
         </button>
 
         <ul className={`navbar-links ${isMenuOpen ? 'open' : ''}`}>
-        <li><a onClick={closeMenu}>Products</a></li>
-        <li><a onClick={closeMenu}>Industries</a></li>
-        <li><a onClick={closeMenu}>Company</a></li>
-        <li><a onClick={closeMenu}>Resources</a></li>
-      </ul>
-      <div className={`button-container ${isMenuOpen ? 'open' : ''}`}>
-        <button className={`navbar-button ${isMenuOpen ? 'open' : ''}`}>Schedule Demo &gt;</button>
+          <li><a onClick={closeMenu}>Products</a></li>
+          <li><a onClick={closeMenu}>Industries</a></li>
+          <li><a onClick={closeMenu}>Company</a></li>
+          <li><a onClick={closeMenu}>Resources</a></li>
+        </ul>
+        <div className={`button-container ${isMenuOpen ? 'open' : ''}`}>
+          <button className={`navbar-button ${isMenuOpen ? 'open' : ''}`}>Schedule Demo &gt;</button>
+        </div>
       </div>
-    </div>
     </nav >
   );
 }

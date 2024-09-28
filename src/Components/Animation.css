@@ -168,15 +168,13 @@
 
 }
 
-
-
 .animationTextScrollEffect {
     width: 523.28px;
     height: 310.78px;
     position: fixed;
     top: 300px;
     left: 817.81px;
-    overflow: hidden; 
+    overflow: hidden;
 }
 
 .loremText {
@@ -186,7 +184,25 @@
     font-weight: 600;
     line-height: 60px;
     text-align: right;
-
 }
 
+.CTAButton {
+    position: relative;
+    display: block;
+    background-color: #EE1B30;
+    color: white;
+    width: 161.24px;
+    height: 39.78px;
+    border: none;
+    border-radius: 36.93px;
+    right: -350px;
+    margin-bottom: 40px;
+}
 
+.loremSubText {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.8px;
+    text-align: right;
+
+}

@@ -9,135 +9,137 @@
     overflow: hidden;
 }
 
-.vector{
+.vector {
     background-image: url('/public/images/Vector.png');
     background-repeat: no-repeat;
     position: absolute;
     width: 1120.5px;
-height: 1120.5px;
-top: 200px;
-border: 0.81px 0px 0px 0px;
+    height: 1120.5px;
+    top: 200px;
+    border: 0.81px 0px 0px 0px;
 
 }
 
-.footerTextContainer{
+.footerTextContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
     position: absolute;
     width: 708.75px;
-height: 234.82px;
-top: 150px;
+    height: 234.82px;
+    top: 150px;
 
 }
 
-.footerHeading{
-font-size: 39px;
-font-weight: 600;
-line-height: 52.5px;
-text-align: center;
-color:#fff;
+.footerHeading {
+    font-size: 39px;
+    font-weight: 600;
+    line-height: 52.5px;
+    text-align: center;
+    color: #fff;
 }
 
-.footerSubHeading{
-font-size: 18px;
-font-weight: 400;
-line-height: 21.6px;
-color:#fff;
-text-align: center;
-margin-top: 20px;
+.footerSubHeading {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
+    color: #fff;
+    text-align: center;
+    margin-top: 20px;
 }
 
-.footerCTAButton{
+.footerCTAButton {
     width: 132px;
-height: 42px;
-margin-top: 30px;
-bottom: 0px;
-border-radius: 39px;
+    height: 42px;
+    margin-top: 30px;
+    bottom: 0px;
+    border-radius: 39px;
 }
 
-.footerContactComponent{
+.footerContactComponent {
     position: absolute;
     width: 85vw;
-height: 524.25px;
-bottom: 0px;
-background-color: #fff;
-border-top-left-radius:15px;
-border-top-right-radius:15px;
-box-shadow: 0px -10px 40px rgba(255,255,255,0.2);
+    height: 524.25px;
+    bottom: 0px;
+    background-color: #fff;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    box-shadow: 0px -10px 40px rgba(255, 255, 255, 0.2);
 }
 
-.footerEndHeader{
+.footerEndHeader {
     display: flex;
     justify-content: space-between;
 }
 
-.footerBrandLogo{
+.footerBrandLogo {
     background-image: url('/public/images/webo_logo_ai-01\ 1\ \(1\).png');
     background-repeat: no-repeat;
     background-size: contain;
     width: 211.76px;
-    height:42.21px;
-    margin:30px 0px 0px 50px;
+    height: 42.21px;
+    margin: 30px 0px 0px 50px;
 }
 
-.footerSocials{
+.footerSocials {
     background-image: url('/public/images/image\ 77.png');
     background-repeat: no-repeat;
     background-size: contain;
     width: 191.25px;
-    height:75.75px;
-    margin:30px 50px 0px 0px;
+    height: 75.75px;
+    margin: 30px 50px 0px 0px;
 }
 
 .thinLine,
-.thinLine1{
+.thinLine1 {
     width: 92%;
 }
-.thinLine1{
+
+.thinLine1 {
     margin-top: 50px;
 }
 
-.footerContactLinksContainer{
+.footerContactLinksContainer {
     display: flex;
-    gap:100px;
-    width:90%;
+    gap: 100px;
+    width: 90%;
 }
 
-.footerContactsOuterContainer{
+.footerContactsOuterContainer {
     display: flex;
     justify-content: center;
 }
-.linkItems{
+
+.linkItems {
     display: inline-block;
     list-style: none;
-font-size: 15px;
-font-weight: 400;
-line-height: 29.25px;
-letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 29.25px;
+    letter-spacing: 1px;
 
 }
 
-.linkItemsHeading{
+.linkItemsHeading {
     list-style: none;
-font-size: 15px;
-font-weight: 700;
-line-height: 29.25px;
-letter-spacing: 1px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 29.25px;
+    letter-spacing: 1px;
 }
 
-.linkItems input{
+.linkItems input {
     width: 384px;
-height: 44.25px;
-margin-top: 20px;
-border:none;
-border-bottom: 1px solid grey;
+    height: 44.25px;
+    margin-top: 20px;
+    border: none;
+    border-bottom: 1px solid grey;
 }
 
-.footerEndTrademark{
+.footerEndTrademark {
     margin: 30px 0 0 50px;
-font-size: 18px;
-font-weight: 400;
-line-height: 21.6px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 21.6px;
 
 }
