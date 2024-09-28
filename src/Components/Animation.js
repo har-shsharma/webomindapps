@@ -8,7 +8,7 @@ const Animation = () => {
   const [leftValues, setLeftValues] = useState([0, 140, 280, 420, 560, 700, 840, 980, 1120, 1260]);
   const [iconOpacity, setIconOpacity] = useState(0);
   const [icon1Top, setIcon1Top] = useState(0); 
-  const [loremMarginTop, setLoremMarginTop] = useState(0); // New state for margin-top
+  const [loremMarginTop, setLoremMarginTop] = useState(0); 
 
   const STAY_SCROLL_START = 781;
   const STAY_SCROLL_END = 1500;
@@ -46,8 +46,6 @@ const Animation = () => {
       const skewReduction = -10 + (currentScrollY - STAY_SCROLL_END) * 0.03;
       setMiddleItemStyle({ top: topIncrease, skewY: Math.min(skewReduction, 0) });
     }
-
-    // Adjust margin-top of loremText based on scroll position
     if (currentScrollY > 2200) {
       const newOpacity = Math.min((currentScrollY - 2200) / 50, 1);
       setIconOpacity(newOpacity);
@@ -55,13 +53,13 @@ const Animation = () => {
           setIcon1Top((currentScrollY - 2200+1000)*1.2); 
       }
 
-      // Start decreasing margin-top after scrollY > 2200
-      const newLoremMarginTop = Math.min((currentScrollY - 2200) * 0.5, 200); // Limit margin-top change
+  
+      const newLoremMarginTop = Math.min((currentScrollY - 2200) * 0.5, 200); 
       setLoremMarginTop(newLoremMarginTop);
     } else {
       setIconOpacity(0); 
       setIcon1Top(0); 
-      setLoremMarginTop(0); // Reset margin-top when scroll is below 2200
+      setLoremMarginTop(0); 
     }
   };
 
