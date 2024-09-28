@@ -55,8 +55,10 @@ const Animation = () => {
       if (currentScrollY < STYLE_SCROLL_TOPEND) {
         setIcon1Top((currentScrollY - 2200 + 1000) * 1.2);
       }
-      if (currentScrollY > 2300 && backgroundImage !== '/images/card3.jpeg') {
+      if (currentScrollY > 2400 && backgroundImage !== '/images/card3.jpeg') {
         setBackgroundImage('/images/card3.jpeg');
+      }else{
+        setBackgroundImage('/images/card6.jpeg');
       }
 
       const newLoremMarginTop = Math.min((currentScrollY - 2200) * 0.68, 400);
@@ -66,7 +68,6 @@ const Animation = () => {
       setIconOpacity(0);
       setIcon1Top(0);
       setLoremMarginTop(0);
-      setBackgroundImage('/images/card6.jpeg');
     }
   };
 
