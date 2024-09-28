@@ -8,7 +8,9 @@ const Animation = () => {
   const [leftValues, setLeftValues] = useState([0, 140, 280, 420, 560, 700, 840, 980, 1120, 1260]);
   const [iconOpacity, setIconOpacity] = useState(0);
   const [icon1Top, setIcon1Top] = useState(0);
-  const [loremMarginTop, setLoremMarginTop] = useState(0); 
+  const [loremMarginTop, setLoremMarginTop] = useState(0);
+  const [backgroundImage, setBackgroundImage] = useState('/images/card6.jpeg');
+
 
   const STAY_SCROLL_START = 781;
   const STAY_SCROLL_END = 1500;
@@ -53,13 +55,18 @@ const Animation = () => {
       if (currentScrollY < STYLE_SCROLL_TOPEND) {
         setIcon1Top((currentScrollY - 2200 + 1000) * 1.2);
       }
+      if (currentScrollY > 2300 && backgroundImage !== '/images/card3.jpeg') {
+        setBackgroundImage('/images/card3.jpeg');
+      }
 
-      const newLoremMarginTop = Math.min((currentScrollY - 2200) * 0.68, 400); 
+      const newLoremMarginTop = Math.min((currentScrollY - 2200) * 0.68, 400);
       setLoremMarginTop(newLoremMarginTop);
+
     } else {
       setIconOpacity(0);
       setIcon1Top(0);
-      setLoremMarginTop(0); 
+      setLoremMarginTop(0);
+      setBackgroundImage('/images/card6.jpeg');
     }
   };
 
@@ -97,7 +104,8 @@ const Animation = () => {
               left: `${middleItemStyle.left}px`,
               position: initialScrollY > STYLE_SCROLL_END ? 'fixed' : 'absolute',
               top: `${middleItemStyle.top}px`,
-              transform: `skewY(${middleItemStyle.skewY}deg)`
+              transform: `skewY(${middleItemStyle.skewY}deg)`,
+              backgroundImage: `url(${backgroundImage})`,
             }}
           ></div>
           <div className="animationItem6" style={{ left: `${leftValues[5]}px` }}></div>

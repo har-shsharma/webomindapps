@@ -66,7 +66,7 @@
 }
 
 .animationItem5 {
-    background-image: url('/public/images/card6.jpeg');
+    /* background-image: url('/public/images/card6.jpeg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -75,6 +75,7 @@
     border-radius: 29.38px;
     transform: skewY(-10deg);
     top: 200px;
+    transition: background-image 0.5s ease-in-out;
 }
 
 .animationItem6 {
