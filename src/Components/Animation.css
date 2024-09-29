@@ -6,8 +6,8 @@
     line-height: 60px;
     text-align: right;
     position: absolute;
-    left: 520px;
-    top: 50px;
+    right: 8vw;
+    top: 20px;
 }
 
 .AnimationHighlightRed {
@@ -63,20 +63,21 @@
     transform: skewY(-10deg);
     position: absolute;
     top: 165px;
+
 }
 
 .animationItem5 {
-    /* background-image: url('/public/images/card6.jpeg'); */
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
     width: 336.64px;
     height: 527.26px;
     border-radius: 29.38px;
-    transform: skewY(-10deg);
     top: 200px;
     transition: background-image 0.5s ease-in-out;
 }
+
+
 
 .animationItem6 {
     background-image: url('/public/images/card5.jpeg');
@@ -151,7 +152,7 @@
     height: 179.11px;
     position: absolute;
     top: 1017.88px;
-    left: 120px;
+    left: 7vw;
     border-radius: 15.82px 0px 0px 0px;
 
 }
@@ -164,7 +165,7 @@
     height: 179.11px;
     position: absolute;
     top: 1400.88px;
-    left: 450px;
+    left: 38vw;
     border-radius: 15.82px 0px 0px 0px;
 
 }
@@ -174,13 +175,13 @@
     height: 310.78px;
     position: fixed;
     top: 300px;
-    left: 817.81px;
+    right: 5vw;
     overflow: hidden;
 }
 
 .loremText {
     position: absolute;
-    top: 70px;
+    top: 100px;
     font-size: 44px;
     font-weight: 600;
     line-height: 60px;
